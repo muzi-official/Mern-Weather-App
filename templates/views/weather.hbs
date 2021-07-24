@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{>headerLinks}}
+</head>
+<body>
+{{>navbar}}
+
+
+<!--start main content -->
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-md-10 col-12 mx-auto">
+      
+
+<div class="main_content col-md-12">
+  <form class="temp_form">
+    <input type="text" id="cityName" placeholder="Enter Your City Name" autocomplete="off">
+    <input type="submit" value="search" id="submitBtn">
+  </form>
+</div>
+
+<div class="tempInformation">
+  <div class="top_layer">
+    <p id="day"></p>
+    <p id="today_date">13 Oct</p>
+  </div>
+  <div class="main_layer">
+    <p id="city_name"></p>
+    <div class="middle_layer data_hide">
+      <p id="temp"><span id="temp_real_value"></span><sup></sup></p>
+      <p id="weatherIcon"><i class='fas fa-cloud' style='color: #93cee5'></i></p>
+    </div>
+  </div>
+</div>
+
+
+     </div>
+   </div>
+</div>
+<!--closed main content -->
+
+<!-- Footer Start -->
+{{>footer}}
+<!-- Footer Closed -->
+  <script src="js/main.js"></script>
+
+  </body>
+
+    </html>
